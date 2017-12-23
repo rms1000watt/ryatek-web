@@ -1,0 +1,28 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "RyaTek"
+theme = "kube"
+description = "RyaTek is a Network of Innovation Powered by Software/Hardware Engineers in the OC area"
+Paginate = 4
+
+publishDir = "../dist"
+
+[Params]
+  RSSLink = "/index.xml"
+  author = "RyaTek"
+  github = "https://github.com/rms1000watt/ryatek-web"
+  twitter = ""
+  email = "myemail@myaddress.xxx"
+
+[[menu.main]]
+    name = "Docs"
+    weight = -90
+    url = "/docs/"
+[[menu.main]]
+    name = "Team"
+    weight = -100
+    url = "/team/"
+[[menu.main]]
+    name = "Showcase"
+    weight = -100
+    url = "/showcase/"
