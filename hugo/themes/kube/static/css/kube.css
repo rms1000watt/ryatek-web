@@ -358,8 +358,8 @@ pre code {
   display: block;
   line-height: 20px;
   color: rgba(49, 52, 57, 0.85);
-  overflow: none;
-  white-space: pre-wrap; }
+  white-space: pre; 
+  overflow: scroll; }
 
 pre {
   padding: 1rem; }

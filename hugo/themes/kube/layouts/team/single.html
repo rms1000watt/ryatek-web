@@ -3,7 +3,7 @@
 {{ define "main"}}
   <div id="main">
     <div id="hero">
-      <h1> {{ .Title}} </h1>
+      <h1> {{ .Params.name}} </h1>
       <p class="hero-lead">
            {{ .Params.bref }}.
       </p>
@@ -14,3 +14,5 @@
     </div>
     </div>
 {{ end }}
+
+{{ define "footer"}} {{ partial "footer" .}} {{end}}

@@ -1,0 +1,24 @@
+{{ define "title"}} {{ .Title}} {{end}}
+{{ define "header"}} {{ partial "header" .}} {{end}}
+{{ define "main"}}
+<div id="main">
+  <div id="hero">
+    <h1>Team</h1>
+  </div>
+  <div id="components">
+    <div class="row gutters">
+      {{ range .Data.Pages.ByWeight }}
+      <div class="col col-4 item">
+        {{if .Params.image}}<a href="{{ .Permalink }}"><img src="{{ .Params.image }}" height="125" width="125" style="border-radius:50%;"/></a>{{end}}
+        <h4><a href="{{ .Permalink }}">{{ .Params.name }}</a></h4>
+        <h6>{{ .Title }}</h6>
+        <p>{{ .Params.description }}</p>
+      </div>
+      {{ end }}
+
+    </div>
+  </div>
+</div>
+{{ end }}
+
+{{ define "footer"}} {{ partial "footer" .}} {{end}}
